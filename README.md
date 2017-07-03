@@ -6,13 +6,13 @@
 - 主要參考來源：[Citrusbyte presents: Making React real-time with Socket.io - Eddie Zaneski](https://www.youtube.com/watch?v=9FPkN6ETqes&t=810s)
 - 關鍵詞：socket.io、react and redux、isomorphic webpack setting
 ### [ 0.1. 其他參考資料 ]
-    - 導入redux參考：[Using socket.io in React-Redux app to handle real-time data.](https://medium.com/@gethylgeorge/using-socket-io-in-react-redux-app-to-handle-real-time-data-c0e734297795)
-    - socket.io使用參考
-        - video：[The Net Ninja：WebSockets Tutorial (Node & Socket.io Chat App)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i4V-_ZVwLmOusj8YAUhj_9)
-            - 深入淺出
-            - 廣播和群播的差異
-        - article：[it邦幫忙鐵人賽：且戰且走HTML5系列：使用Socket.io 3 ~ 8](http://ithelp.ithome.com.tw/articles/10102886)
-            - 5 ~ 8 深入探討socket.io的底層實作，非常值得參考
+- 導入redux參考：[Using socket.io in React-Redux app to handle real-time data.](https://medium.com/@gethylgeorge/using-socket-io-in-react-redux-app-to-handle-real-time-data-c0e734297795)
+- socket.io使用參考
+    - video：[The Net Ninja：WebSockets Tutorial (Node & Socket.io Chat App)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i4V-_ZVwLmOusj8YAUhj_9)
+        - 深入淺出
+        - 廣播和群播的差異
+    - article：[it邦幫忙鐵人賽：且戰且走HTML5系列：使用Socket.io 3 ~ 8](http://ithelp.ithome.com.tw/articles/10102886)
+        - 5 ~ 8 深入探討socket.io的底層實作，非常值得參考
 <hr>
 <hr>
 
