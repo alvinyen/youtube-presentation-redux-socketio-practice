@@ -20,7 +20,7 @@
 ### [ 1.1. webpack setting ]
 #### { 1.1.1. dependencies }
 - webpack
-    - webpack
+    - webpack // in dependencies, not in devDependencies
 - babel
     - babel-core
     - babel-loader // for webpack 
@@ -45,5 +45,12 @@
     - 因為使用webpack-dev-middleware for express，因此設定bundle.js的輸出為根目錄
     - output: { path: '/' } // 代表 "/bundle.js"
 - query
-    - 通常是用來指向loader的設定檔
-    - 以babel為例，可以直接包個object作為設定檔，或者另外開個.babelrc作為設定檔，再讓query指向.babelrc
+    - 有.babelrc的babel設定檔就不用設定query欄位
+    - 也可以直接開個query field做相關的babel設定 (presets、 plugins..etc.)
+    - presets就是plugin的集合
+
+<hr>
+
+### [ 2. server.js ]
+- 切記socket.io是建立在server上而不是app
+    - ![](https://i.imgur.com/VwPJRnq.png)
