@@ -7,6 +7,14 @@ class App extends React.Component {
     super(props);
     this.state = { messages: [] };
   }
+
+  componentDidMount = () => {
+    this.socket = io('/');
+    this.socket.on('message', (message) => {
+      this.setState({ messages: [...this.state.messages, message] });
+    });
+  }
+
   handleSubmit = (event) => {
     const body = event.target.value;
     if(event.keyCode === 13 && body){
@@ -15,9 +23,11 @@ class App extends React.Component {
         body
       };
       this.setState({ messages: [...this.state.messages ,message] });
+      this.socket.emit('message', body);
       event.target.value = '';
     }
   }
+
   render() {
     const messages = this.state.messages.map((message, index) => {
       return <li key={message + index}>

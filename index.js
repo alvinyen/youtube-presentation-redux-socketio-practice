@@ -18,4 +18,13 @@ app.use(webpackDevMiddleware(webpack(webpackConfig)));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+io.on('connection', (socket) => {
+  socket.on('message', (body) => {
+    socket.broadcast.emit('message', {
+      from: socket.id.slice(8),
+      body,
+    });
+  });// socket server的位址、做socket的初始化
+});
+
 server.listen(3000);
