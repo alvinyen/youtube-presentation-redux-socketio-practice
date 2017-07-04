@@ -56,6 +56,25 @@
 
 <hr>
 
-### [ 2. server.js ]
+### [ 2. basic single person chatroom ]
+#### { 2.1. server.js }
 - 切記socket.io是建立在server上而不是app
     - ![](https://i.imgur.com/VwPJRnq.png)
+
+#### { 2.2. client side code }
+- input onKeyUp
+    - event.keyCode === 13 // enter
+- 非常完整的拿值、驗證非空白、利用spread oprator結合新的value到陣列中 (並展開舊內容)
+```
+    handleSubmit = (event) => {
+        const body = event.target.value;
+        if(event.keyCode === 13 && body){
+            const message = {
+                from: 'Me',
+                body
+            };
+            this.setState({ messages: [...this.state.messages, message] });
+            event.target.value = '';
+        }
+    }
+```
