@@ -48,6 +48,11 @@
     - 有.babelrc的babel設定檔就不用設定query欄位
     - 也可以直接開個query field做相關的babel設定 (presets、 plugins..etc.)
     - presets就是plugin的集合
+#### { 1.1.3. some errors occurred while webpack bundling }
+- 當出現`ERROR in Entry module not found: Error: Can't resolve 'babel-loader' in ...`
+    - <font color=red>務必確認babel-loader或相關套件有沒有安裝完整！！！</font>
+    - 參考[ERROR in Entry module not found: Error: Can't resolve 'babel' #234](https://github.com/vuejs/vue-cli/issues/234)
+    - 如果確認套件已經安裝卻還是錯誤，可參考：[Error: Cannot resolve module 'babel-loader' Ask](https://stackoverflow.com/questions/34538466/error-cannot-resolve-module-babel-loader)
 
 <hr>
 
