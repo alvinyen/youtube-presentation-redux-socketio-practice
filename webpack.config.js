@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: '/',  // 代表打包到public的根目錄下，而不是專案的根目錄！！
     // 必須是絕對路徑，因為打包出來的圖片等等檔名會經過hash另外還有publicPath和filename可以設定
+    // !important：沒有設定filename的話，預設bundle出來會是main.js而不是bundle.js
   },
   // resolveLoader: {
   //   moduleExtensions: ['-loader'],

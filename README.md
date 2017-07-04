@@ -44,7 +44,8 @@
 - entry：entry point of client side codebase
 - output：bundle.js的輸出位址
     - 因為使用webpack-dev-middleware for express，因此設定bundle.js的輸出為根目錄
-    - output: { path: '/' } // 代表 "/bundle.js"
+    - output: { path: '/' } // 代表 "/main.js"
+    - 沒有設定filename的話，預設bundle出來會是main.js而不是bundle.js
 - query
     - 有.babelrc的babel設定檔就不用設定query欄位
     - 也可以直接開個query field做相關的babel設定 (presets、 plugins..etc.)
